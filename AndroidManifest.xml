@@ -28,9 +28,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ManagePreferences" >
-        </activity>
-
+        <activity android:name=".SettingsActivity"
+            android:label="@string/tv_settings"
+             />
         <receiver android:name=".TrackShutdown" >
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />

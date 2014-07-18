@@ -6,40 +6,17 @@
 
 package siir.es.adbWireless;
 
-import java.net.URI;
+import android.os.Bundle;
+import android.preference.PreferenceActivity;
 
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.DefaultHttpClient;
-
-import android.os.AsyncTask;
-
-class AutoConnectTask extends AsyncTask<Void, Void, Void>
+public class SettingsActivity extends PreferenceActivity
 {
 
-	private String url;
-
-	public AutoConnectTask(String u)
-	{
-		this.url = u;
-	}
-
+	@SuppressWarnings("deprecation")
 	@Override
-	protected Void doInBackground(Void... params)
+	public void onCreate(Bundle savedInstanceState)
 	{
-		try
-		{
-			URI url = new URI(this.url);
-			System.out.println("url = " + this.url);
-			HttpClient httpClient = new DefaultHttpClient();
-			HttpGet method = new HttpGet(url);
-			httpClient.execute(method);
-		}
-		catch (Exception e)
-		{
-			Debug.error("ERROR doInBackground()", e);
-		}
-		return null;
+		super.onCreate(savedInstanceState);
+		addPreferencesFromResource(R.xml.preferences);
 	}
-
 }

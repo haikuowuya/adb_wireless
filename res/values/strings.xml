@@ -8,6 +8,7 @@
     <string name="footer_text_3"></string>
     <string name="footer_text_off">无线调试已经关闭</string>
     <string name="button_close">关闭</string>
+    <string name="button_cancle">取消</string>
     <string name="button_exit">退出</string>
     <string name="button_continue">Continue</string>
     <string name="button_activate_wifi">Activate WiFi</string>
@@ -18,10 +19,11 @@
     <string name="menu_prefs">设置</string>
     <string name="menu_about">关于</string>
     <string name="menu_exit">退出</string>
-    <string name="about">adbWireless enable ADB wireless connection to connect to the phone as if connected by USB.\n\nDeveloped by MrSiir (mrsiir@gmail.com)\n\nadbWirelessService:\nhttps://github.com/MrSiir/adbWireless/tree/master/server\n\nSource code:\nhttps://github.com/slightlywobbly/adbWireless\n\nContributors: HandlerExploit and Skywriter</string>
+    <string name="about">无线调试允许开发人员摆脱USB数据线和距离的束缚。\n作者：MrSiir(mrsiir@gmail.com)\n\nadbWirelessService代码地址:\nhttps://github.com/MrSiir/adbWireless/tree/master/server[已丢失]\n\nAndroid源代码地址:\nhttps://github.com/slightlywobbly/adbWireless </string>
+    <string name="tv_exit">确定退出无线调试客户端？</string>
+    <string name="tv_settings">设置</string>
     <string name="noti_text">连接到 </string>
     <string name="noti_title">USB调试已经连接</string>
-    <string name="settings_title">设置</string>
     <string name="turning_on_wifi">打开WIFI</string>
     <string name="turning_off_wifi">关闭WIFI</string>
     <string name="connect_sample">adb connect 192.168.1.106</string>

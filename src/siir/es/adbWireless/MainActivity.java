@@ -28,7 +28,6 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity
 {
-
 	public static final String PORT = "5555";
 	public static final boolean USB_DEBUG = false;
 
@@ -41,22 +40,19 @@ public class MainActivity extends Activity
 	private ImageView iv_button;
 
 	private Toast toastBack;
-
+ 
 	public static RemoteViews remoteViews = new RemoteViews("siir.es.adbWireless", R.layout.adb_appwidget);
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
-
+		setContentView(R.layout.main);//TODO
 		initView();
-
 		if (Utils.mNotificationManager == null)
 		{
 			Utils.mNotificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
 		}
-
 		if (!Utils.hasRootPermission())
 		{
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -68,7 +64,7 @@ public class MainActivity extends Activity
 				}
 			});
 			builder.setIcon(android.R.drawable.ic_dialog_alert);
-			builder.create();
+			 builder.create();
 			builder.setTitle(R.string.no_root_title);
 			builder.show();
 		}
@@ -77,7 +73,6 @@ public class MainActivity extends Activity
 		{
 			wifiState = false;
 			Utils.saveWiFiState(this, wifiState);
-
 			if (Utils.prefsWiFiOn(this))
 			{
 				Utils.enableWiFi(this, true);
@@ -100,7 +95,6 @@ public class MainActivity extends Activity
 				Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 				if (Utils.prefsHaptic(MainActivity.this))
 					vib.vibrate(45);
-
 				try
 				{
 					if (!mState)
@@ -112,7 +106,6 @@ public class MainActivity extends Activity
 						Utils.adbStop(MainActivity.this);
 					}
 					updateState();
-
 				}
 				catch (Exception e)
 				{
@@ -191,14 +184,14 @@ public class MainActivity extends Activity
 		switch (item.getItemId())
 		{
 		case R.id.menu_prefs:
-			Intent i = new Intent(this, ManagePreferences.class);
+			Intent i = new Intent(this, SettingsActivity.class);
 			startActivityForResult(i, Utils.ACTIVITY_SETTINGS);
 			break;
 		case R.id.menu_about:
 			this.showHelpDialog();
 			return true;
 		case R.id.menu_exit:
-			MainActivity.this.finish();
+			showExitDialog();
 			return true;
 		}
 		return super.onMenuItemSelected(featureId, item);
@@ -212,13 +205,12 @@ public class MainActivity extends Activity
 	{
 		if (keyCode == KeyEvent.KEYCODE_BACK)
 		{
-			// Do nothing, force them to hit the home button so it does not
-			// close the application.
 			if (toastBack == null || toastBack.getView().getWindowVisibility() != View.VISIBLE)
 			{
 				toastBack = Toast.makeText(this, R.string.exit_info, Toast.LENGTH_LONG);
-				toastBack.show();
+//				toastBack.show();
 			}
+			showExitDialog();
 			return true;
 		}
 		return super.onKeyDown(keyCode, event);
@@ -270,4 +262,22 @@ public class MainActivity extends Activity
 		builder.show();
 	}
 
+	private void showExitDialog()
+	{
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage(getString(R.string.tv_exit)).setCancelable(true).setPositiveButton("退出", new DialogInterface.OnClickListener()
+		{
+			public void onClick(DialogInterface dialog, int which)
+			{
+				MainActivity.this.finish();
+			}
+		}).setNegativeButton(getString(R.string.button_cancle), new DialogInterface.OnClickListener()
+		{
+			public void onClick(DialogInterface dialog, int id)
+			{}
+		});
+		builder.setIcon(R.drawable.ic_launcher);
+		builder.setTitle(R.string.app_name);
+		builder.show();
+	}
 }

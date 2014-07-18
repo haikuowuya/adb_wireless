@@ -2,7 +2,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:persistent="true" >
 
-    <PreferenceCategory android:title="@string/settings_title" >
+    <PreferenceCategory android:title="@string/tv_settings" >
         <CheckBoxPreference
             android:defaultValue="@string/default_onboot"
             android:key="@string/pref_onboot_key"
