@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 adbwireless
 ==========
 
@@ -51,3 +52,9 @@ For the auto connection to the computer, more info:
 
 this has gone missing ---> https://github.com/MrSiir/adbWireless/tree/master/server
 
+=======
+adb_wireless
+============
+
+ADB无线调试
+>>>>>>> 41c9589a73634e0bea98afc00f2e449588ecec50
