@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">无线调试</string>
+    <string name="top_text">欢迎使用无线调试，点击下面的按钮你可以开启/关闭无线调试</string>
+    <string name="footer_text_1">无线调试已经打开，请在你的电脑中执行以下命令:</string>
+    <string name="footer_text_2"></string>
+    <string name="footer_text_3"></string>
+    <string name="footer_text_off">无线调试已经关闭</string>
+    <string name="button_close">关闭</string>
+    <string name="button_exit">退出</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_activate_wifi">Activate WiFi</string>
+    <string name="no_root_title">设备没有Root</string>
+    <string name="no_root">Oops! Sorry, but your kernel does not have all necessary features for running this application, you need a rooted phone.</string>
+    <string name="no_wifi_title">No Wireless!</string>
+    <string name="no_wifi">Oops! Sorry, but WiFi is off, you need an active WiFi to use adbWireless.</string>
+    <string name="menu_prefs">设置</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit">退出</string>
+    <string name="about">adbWireless enable ADB wireless connection to connect to the phone as if connected by USB.\n\nDeveloped by MrSiir (mrsiir@gmail.com)\n\nadbWirelessService:\nhttps://github.com/MrSiir/adbWireless/tree/master/server\n\nSource code:\nhttps://github.com/slightlywobbly/adbWireless\n\nContributors: HandlerExploit and Skywriter</string>
+    <string name="noti_text">连接到 </string>
+    <string name="noti_title">USB调试已经连接</string>
+    <string name="settings_title">设置</string>
+    <string name="turning_on_wifi">打开WIFI</string>
+    <string name="turning_off_wifi">关闭WIFI</string>
+    <string name="connect_sample">adb connect 192.168.1.106</string>
+    <string name="exit_info">To close the application use the Exit menu. To continue working use the home button.</string>
+
+    <!-- Settings -->
+    <string name="onboot">自动启动</string>
+    <string name="server_onboot">当设备启动的时候应用程序也自动启动</string>
+    <string name="vibrate">震动</string>
+    <string name="server_vibrate">当与设备连接成功的时候</string>
+    <string name="sound">声音</string>
+    <string name="server_sound">当与设备连接成功的时候</string>
+    <string name="notification">通知</string>
+    <string name="server_noti">当与设备连接成功的时候</string>
+    <string name="haptic">触摸反馈</string>
+    <string name="server_haptic">当按钮按下的时候</string>
+    <string name="wifi_on">WIFI自动打开</string>
+    <string name="server_wifi_on">当应用开启的时候自动打开WIFI</string>
+    <string name="wifi_off">WIFI自动关闭</string>
+    <string name="server_wifi_off">当应用退出的时候自动关闭WIFI</string>
+    <string name="widget_start">无线调试已经打开\n连接到</string>
+
+    <!-- Defaults -->
+    <string name="default_vibrate">true</string>
+    <string name="default_sound">true</string>
+    <string name="default_noti">true</string>
+    <string name="default_haptic">true</string>
+    <string name="default_wifi_on">false</string>
+    <string name="default_wifi_off">false</string>
+    <string name="default_onboot">false</string>
+
+    <!-- Keys -->
+    <string name="pref_vibrate_key">key_vibrate</string>
+    <string name="pref_sound_key">key_sound</string>
+    <string name="pref_noti_key">key_noti</string>
+    <string name="pref_haptic_key">key_haptic</string>
+    <string name="pref_wifi_on_key">key_wifi_on</string>
+    <string name="pref_wifi_off_key">key_wifi_off</string>
+    <string name="pref_onboot_key">key_onboot</string>
+
+    <!-- Start 1.5.3 -->
+    <string name="autcon_incomplete">你必须配置端口和IP地址</string>
+    <string name="settings_title_autcon">自动连接</string>
+    <string name="settings_title_wifi">WIFI设置</string>
+    <string name="autocon">自动连接</string>
+    <string name="server_autocon">当你启动ADB的时候自动连接到电脑</string>
+    <string name="default_autocon">false</string>
+    <string name="pref_autocon_key">key_autocon</string>
+    <string name="autoconip">电脑名称/IP地址</string>
+    <string name="server_autoconip">电脑地址, 需要无线调试服务</string>
+    <string name="default_autoconip"></string>
+    <string name="pref_autoconip_key">key_autoconip</string>
+    <string name="autoconport">电脑开启的端口</string>
+    <string name="server_autoconport">默认端口是8555</string>
+    <string name="default_autoconport">8555</string>
+    <string name="pref_autoconport_key">key_autoconport</string>
+    <!-- End 1.5.3 -->
+    
+    <!-- Start 1.5.4 -->
+    <string name="screenon">设备屏幕常亮</string>
+    <string name="server_screenon">设备不会进入休眠模式</string>
+    <string name="default_screenon">false</string>
+    <string name="pref_screenon_key">key_screenon</string>
+    <!-- End 1.5.4 -->
+
+</resources>
