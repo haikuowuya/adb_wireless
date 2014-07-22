@@ -354,7 +354,6 @@ public class Utils
 
 		if(Utils.mNotificationManager == null)
 		{
-			
 			Utils.mNotificationManager = (NotificationManager) context.getSystemService(Activity.NOTIFICATION_SERVICE);
 		}
 			Utils.mNotificationManager.notify(Utils.START_NOTIFICATION_ID, notifyDetails);

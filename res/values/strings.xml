@@ -10,12 +10,12 @@
     <string name="button_close">关闭</string>
     <string name="button_cancle">取消</string>
     <string name="button_exit">退出</string>
-    <string name="button_continue">Continue</string>
-    <string name="button_activate_wifi">Activate WiFi</string>
+    <string name="button_continue">继续</string>
+    <string name="button_activate_wifi">打开WIFI</string>
     <string name="no_root_title">设备没有Root</string>
     <string name="no_root">Oops! Sorry, but your kernel does not have all necessary features for running this application, you need a rooted phone.</string>
     <string name="no_wifi_title">No Wireless!</string>
-    <string name="no_wifi">Oops! Sorry, but WiFi is off, you need an active WiFi to use adbWireless.</string>
+    <string name="no_wifi">WIFI是关闭的，你需要打开才可以使用无线调试</string>
     <string name="menu_prefs">设置</string>
     <string name="menu_about">关于</string>
     <string name="menu_exit">退出</string>
