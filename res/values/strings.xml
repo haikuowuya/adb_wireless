@@ -13,7 +13,7 @@
     <string name="button_continue">继续</string>
     <string name="button_activate_wifi">打开WIFI</string>
     <string name="no_root_title">设备没有Root</string>
-    <string name="no_root">Oops! Sorry, but your kernel does not have all necessary features for running this application, you need a rooted phone.</string>
+    <string name="no_root">你的设备需要Root后才可以使用所有的功能！</string>
     <string name="no_wifi_title">没有可用WIFI</string>
     <string name="no_wifi">WIFI是关闭的，你需要打开才可以使用无线调试</string>
     <string name="menu_prefs">设置</string>
@@ -26,8 +26,8 @@
     <string name="noti_title">USB调试已经连接</string>
     <string name="turning_on_wifi">打开WIFI</string>
     <string name="turning_off_wifi">关闭WIFI</string>
-    <string name="connect_sample">adb connect 192.168.1.106</string>
-    <string name="exit_info">To close the application use the Exit menu. To continue working use the home button.</string>
+    <string name="connect_sample">连接到 192.168.1.106</string>
+    <string name="exit_info">退出应用程序，请点击退出按钮</string>
 
     <!-- Settings -->
     <string name="onboot">自动启动</string>
